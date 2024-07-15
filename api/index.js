@@ -3,7 +3,6 @@ import mongoose, { startSession } from 'mongoose';
 import dotenv from 'dotenv'
 import userRoutes from './routes/user.js'
 import authRoutes from './routes/auth.route.js'
-import e from 'express';
 
 dotenv.config();
 
