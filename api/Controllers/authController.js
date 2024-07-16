@@ -43,9 +43,6 @@ export const signin = async (req, res, next) => {
 
 // google auth
 
-
-
-
 export const googleSignIn = async (req, res, next) => {
     try {
       const { name, email, photo } = req.body;
@@ -88,3 +85,10 @@ export const googleSignIn = async (req, res, next) => {
       next(error);
     }
   };
+
+
+  // /signout
+  export const signout = (req, res) => {
+    res.clearCookie('access_token').status(200).json({ message: 'SignOut success' });
+  };
+  
