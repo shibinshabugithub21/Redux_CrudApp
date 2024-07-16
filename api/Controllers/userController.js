@@ -1,5 +1,5 @@
 import User from '../models/user.js';
-import { errorHandler } from '../utils/error.js';
+// import { errorHandler } from '../utils/error.js';
 import bcrypt from 'bcryptjs';
 
 export const test = (req, res) => {
